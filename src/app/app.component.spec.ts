@@ -1,13 +1,19 @@
 import { TestBed, async } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
+import { HeroFormComponent } from "app/hero-form/hero-form.component";
+import { FormsModule } from "@angular/forms";
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent, 
+        HeroFormComponent // TODO mock this component out
       ],
+      imports:[
+        FormsModule
+      ]
     }).compileComponents();
   }));
 
