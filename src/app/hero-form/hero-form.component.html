@@ -1,6 +1,6 @@
 <div class="container">
   <h1>Hero Form</h1>
-  <form #heroForm="ngForm">
+  <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
 
     <div class="form-group">
       <label for="name">Name</label>
@@ -27,7 +27,8 @@
       </div>
     </div>
 
-    <button type="submit" class="btn btn-success">Submit</button>
+    <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid">Submit</button>
+    <button type="button" class="btn btn-default" (click)="newHero(); heroForm.reset()">New Hero</button>
 
   </form>
 </div>

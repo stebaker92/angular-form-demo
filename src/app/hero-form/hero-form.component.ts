@@ -8,11 +8,15 @@ import { Hero } from "app/hero";
 export class HeroFormComponent {
 
   powers = ['Really Smart', 'Super Flexible',
-            'Super Hot', 'Weather Changer'];
+    'Super Hot', 'Weather Changer'];
 
   model = new Hero(18, 'Dr IQ', this.powers[0], 'Chuck Overstreet');
 
   submitted = false;
+
+  newHero() {
+    this.model = new Hero(42, '', '');
+  }
 
   onSubmit() { this.submitted = true; }
 
