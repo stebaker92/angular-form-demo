@@ -1,4 +1,6 @@
-# angular 4 form demo
+# Angular 4 Form Demo
+
+An Angular 4 app demonstrating basic forms & validation using the Angular CLI
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.0.
 
